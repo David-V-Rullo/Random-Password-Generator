@@ -1,14 +1,15 @@
 // Assignment Code
 // Declaring variables containing arrays to choose and pull from for passGen
-let specialChar = "!@#$%^&*()_+[]{}|.<>?/";
-let numbArray = "1234567890";
-let lowerCase = "abcdefghijklmnopqrstuvwxyz";
-let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let specialChar = "!@#$%^&*()_+[]{}|.<>?/".split("");
+let numbArray = "1234567890".split("");
+let lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
+let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 //Create arrays from strings of characters
-specialChar = specialChar.split("");
-numbArray = numbArray.split("");
-lowerCase = lowerCase.split("");
-upperCase = upperCase.split("");
+//No need for the below extra step. The split method can apply directly to the end of the string. 
+// specialChar = specialChar.split("");
+// numbArray = numbArray.split("");
+// lowerCase = lowerCase.split("");
+// upperCase = upperCase.split("");
 // function to as user for password options - length and type of characters to use
 function userPrompt() {
   var options = {};
