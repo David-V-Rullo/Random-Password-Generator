@@ -17,7 +17,7 @@ The user will be prompted to select whether their new password contains the foll
   -Lower Case Characters
   -Numbers
 
-##Screentshots
+## Screentshots
 
 ![Screenshot 1](https://user-images.githubusercontent.com/80405589/117549326-ccabc180-b007-11eb-9714-efff07875804.JPG)
 
