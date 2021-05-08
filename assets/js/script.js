@@ -5,7 +5,7 @@ let numbArray = "1234567890".split("");
 let lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
 let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 //Create arrays from strings of characters
-//No need for the below extra step. The split method can apply directly to the end of the string. 
+//No need for the below extra step. The split method can apply directly to the end of the string.
 // specialChar = specialChar.split("");
 // numbArray = numbArray.split("");
 // lowerCase = lowerCase.split("");
@@ -35,13 +35,12 @@ function userPrompt() {
     return null;
   }
   options.length = length;
- 
+
   var special = prompt(
     "Would you like to use special characters(!@#$...etc) in your password: Y/N"
   );
 
   special = special.toUpperCase();
-  console.log(special)
 
   if (special !== "Y" && special !== "N") {
     alert("Please enter Y or N");
@@ -81,7 +80,7 @@ function userPrompt() {
     options.numbArray = numbArray;
   } else {
   }
-  return options
+  return options;
 }
 
 //Create a function for getting random element from an array
@@ -95,7 +94,7 @@ function getRandomElement(arr) {
 
 function generatingPassword() {
   //create variable to call getPassword function
-  var options = userPrompt()
+  var options = userPrompt();
   // stores final password
   var passResult = [];
   // stores the possible characters to be included in password
@@ -115,12 +114,12 @@ function generatingPassword() {
   if (options.numbArray) {
     possibleChars = possibleChars.concat(numbArray);
   }
-  
+
   for (let i = 0; i < options.length; i++) {
     passResult[i] = getRandomElement(possibleChars);
   }
-  console.log(passResult)
-  passResult = passResult.join('');
+  console.log(passResult);
+  passResult = passResult.join("");
   return passResult;
 }
 
